@@ -1,0 +1,13 @@
+@charset "ISO-8859-1";
+
+.alert {
+   width:300px!important;    
+}
+
+.card-deck{
+    bottom-margin: 10px;
+}
+.border {
+ border-style:solid;
+ border-color:#287EC7;
+}
