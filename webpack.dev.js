@@ -22,12 +22,20 @@ module.exports = {
                     "style-loader",
                     "css-loader"
                 ]
-            }
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+                options: {
+                    presets: ['@babel/preset-env']
+                }
+            },
         ]
     },
 
-  // https://webpack.js.org/concepts/plugins/
-  plugins: [
+    // https://webpack.js.org/concepts/plugins/
+    plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
             inject: true,
