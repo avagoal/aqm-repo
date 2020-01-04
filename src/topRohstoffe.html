@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+
+<title>Getting Started: Serving Web Content</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<div class="pos-f-t">
+		<div class="collapse" id="navbarToggleExternalContent">
+			<div class="bg-dark p-4">
+				<h5 class="text-white h4">Collapsed content</h5>
+				<span class="text-muted">Toggleable via the navbar brand.</span>
+			</div>
+		</div>
+		<nav class="navbar navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand" href="#"><img src="euro.png" width="50"
+					height="40" class="d-inline-block align-top"> <a
+					class="navbar-brand" href="topIndizies">Top Indizies</a> <a
+					class="navbar-brand" href="topRohstoffe">Top Rohstoffe</a> <a
+					class="navbar-brand" href="topWaehrung">Top Währung</a> <a
+					class="navbar-brand" href="watchList">Watchlist</a>
+					<a class="navbar-brand" href="News">Newsticker</a>
+			</div>
+		</nav>
+	</div>
+	<br>
+
+
+	<div class="container">
+		<h3>Top Rohstoffe</h3>
+
+		<table class="table table-bordered table-dark">
+			<thead>
+				<tr>
+					<th scope="col">Nr.</th>
+					<th scope="col">Name</th>
+					<th scope="col">Kurs</th>
+					<th scope="col">Schwankung +/- 24h</th>
+					<th scope="col">Schwankung +/- 7d</th>
+					<th scope="col">Watchliste</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>GDaxi</td>
+					<td>DAX</td>
+					<td>13.200</td>
+					<td>26.788</td>
+					<td><input type="checkbox"></td>
+
+				</tr>
+
+				<tr>
+					<th scope="row">2</th>
+					<td>MDAXI</td>
+					<td>MDAX</td>
+					<td>26.777</td>
+					<td>26.788</td>
+					<td><input type="checkbox"></td>
+
+				</tr>
+
+				<tr>
+					<th scope="row">3</th>
+					<td>DAX</td>
+					<td>DAXX</td>
+					<td>25.757</td>
+					<td>26.788</td>
+					<td><input type="checkbox"></td>
+
+				</tr>
+
+				<tr>
+
+					<th scope="row">4</th>
+					<td>MAX</td>
+					<td>MAXXX</td>
+					<td>26.788</td>
+					<td>26.788</td>
+					<td><input type="checkbox"></td>
+				</tr>
+
+			</tbody>
+		</table>
+		<form th:action=@{/home} th:metod="post">
+			<button type="submit" value="zurück" class="btn btn-dark">Zurück</button>
+		</form>
+	</div>
+
+</body>
+</html>
