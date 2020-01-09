@@ -268,8 +268,8 @@
                 let nikkei225Element = document.getElementById('nikkei225')
 
                 dowJonesElement.innerText = 'DowJones: ' + data.dowJones;
-                sp500Element.innerText = 'S%P 500 : ' + data.sp500;
-                nikkei225Element.innerText = 'NIKKEI 225 : ' + data.nikkei225;
+                sp500Element.innerText = 'S%P 500: ' + data.sp500;
+                nikkei225Element.innerText = 'NIKKEI 225: ' + data.nikkei225;
             });
 
         const responseHK = fetchData(urlHK, options)
@@ -280,7 +280,7 @@
 
                 let hangSengElement = document.getElementById('hangSeng');
 
-                hangSengElement.innerText = 'Hang Seng ' + data.hangSeng;
+                hangSengElement.innerText = 'Hang Seng: ' + data.hangSeng;
             });
 
     </script>
