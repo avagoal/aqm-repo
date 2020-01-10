@@ -20,7 +20,8 @@
 		<nav class="navbar navbar-dark bg-dark">
 			<div class="container">
 				<a class="navbar-brand" href="#"><img src="euro.png" width="50"
-					height="40" class="d-inline-block align-top"> <a
+					height="40" class="d-inline-block align-top"></a> <a
+					class="navbar-brand" href="index.html">Startseite</a><a
 					class="navbar-brand" href="topIndizies.html">Top Indizies</a> <a
 					class="navbar-brand" href="topRohstoffe.html">Top Rohstoffe</a> <a
 					class="navbar-brand" href="topWaehrung.html">Top Währung</a> <a
@@ -89,9 +90,11 @@
 
 			</tbody>
 		</table>
-		<form th:action=@{/home} th:metod="post">
-			<button type="submit" value="zurück" class="btn btn-dark">Zurück</button>
-		</form>
+	</div>
+
+	<div class="container">
+		<a href="index.html" value="Zur Startseite" class="btn btn-dark">
+			Zurück zur Startseite</a>
 	</div>
 
 </body>
