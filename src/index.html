@@ -74,72 +74,108 @@
                 <br>
                 <div class="row">
                     <div class="col-sm">
-                        <div class="alert alert-secondary"></div>
+                        <div class="alert alert-secondary">
+							<p id="gold">Loading...</p>
+						</div>
                     </div>
                     <div class="col-sm">
-                        <div class="alert alert-secondary"></div>
+                        <div class="alert alert-secondary">
+							<p id="">Loading...</p>
+						</div>
                     </div>
                     <div class="col-sm">
-                        <div class="alert alert-secondary"></div>
+                        <div class="alert alert-secondary">
+							<p id="">Loading...</p>
+						</div>
                     </div>
                     <div class="col-sm">
-                        <div class="alert alert-secondary"></div>
+                        <div class="alert alert-secondary">
+							<p id="">Loading...</p>
+						</div>
                     </div>
 
                     <div class="col-sm">
-                        <div class="alert alert-secondary"></div>
+                        <div class="alert alert-secondary">
+							<p id="">Loading...</p>
+						</div>
                     </div>
 
                     <div class="col-sm">
-                        <div class="alert alert-secondary"></div>
+                        <div class="alert alert-secondary">
+							<p id="">Loading...</p>
+						</div>
                     </div>
                 </div>
                 <br>
 
                 <div class="row">
                     <div class="col-sm">
-                        <div class="alert alert-secondary"></div>
+                        <div class="alert alert-secondary">
+							<p id="euroUsd">Loading...</p>
+						</div>
                     </div>
                     <div class="col-sm">
-                        <div class="alert alert-secondary"></div>
+                        <div class="alert alert-secondary">
+							<p id="euroGbp">Loading...</p>
+						</div>
                     </div>
                     <div class="col-sm">
-                        <div class="alert alert-secondary"></div>
+                        <div class="alert alert-secondary">
+							<p id="">Loading...</p>
+						</div>
                     </div>
                     <div class="col-sm">
-                        <div class="alert alert-secondary"></div>
+                        <div class="alert alert-secondary">
+							<p id="">Loading...</p>
+						</div>
                     </div>
 
                     <div class="col-sm">
-                        <div class="alert alert-secondary"></div>
+                        <div class="alert alert-secondary">
+							<p id="">Loading...</p>
+						</div>
                     </div>
 
                     <div class="col-sm">
-                        <div class="alert alert-secondary"></div>
+                        <div class="alert alert-secondary">
+							<p id="">Loading...</p>
+						</div>
                     </div>
                 </div>
 
                 <br>
                 <div class="row">
                     <div class="col-sm">
-                        <div class="alert alert-secondary"></div>
+                        <div class="alert alert-secondary">
+							<p id="btc">Loading...</p>
+						</div>
                     </div>
                     <div class="col-sm">
-                        <div class="alert alert-secondary"></div>
+                        <div class="alert alert-secondary">
+							<p id="">Loading...</p>
+						</div>
                     </div>
                     <div class="col-sm">
-                        <div class="alert alert-secondary"></div>
+                        <div class="alert alert-secondary">
+							<p id="">Loading...</p>
+						</div>
                     </div>
                     <div class="col-sm">
-                        <div class="alert alert-secondary"></div>
+                        <div class="alert alert-secondary">
+							<p id="">Loading...</p>
+						</div>
                     </div>
 
                     <div class="col-sm">
-                        <div class="alert alert-secondary"></div>
+                        <div class="alert alert-secondary">
+							<p id="">Loading...</p>
+						</div>
                     </div>
 
                     <div class="col-sm">
-                        <div class="alert alert-secondary"></div>
+                        <div class="alert alert-secondary">
+							<p id="">Loading...</p>
+						</div>
                     </div>
                 </div>
 
@@ -164,8 +200,9 @@
             <div class="card" style="width: 20rem;">
                 <div class="card-body">
                     <h6 class="card-title">Hauptnews Section/Finance über yahoo</h6>
-                    <p class="card-text">...</p>
-                    <p class="card-text"></p>
+                    <div id="news-en-list">
+
+					</div>
                 </div>
             </div>
             <div class="card" style="width: 20rem;">
@@ -197,9 +234,15 @@
         // Options //url api
         const urlDE = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/get-summary?region=DE&lang=de';
         const urlEN = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/get-summary?region=EN&lang=en';
-        const urlHK = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/get-summary?region=HK&lang=de';
+		const urlHK = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/get-summary?region=HK&lang=de';
+		
+		const urlForexUsd = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-statistics?region=DE&symbol=EURUSD%253DX'
+		//const urlForexGbp = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-statistics?region=DE&symbol=EURGBP%253DX'
 
-        const urlNewsFeed = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-newsfeed?category=generalnews&region=DE';
+		//const urlGold = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-statistics?region=DE&symbol=GC%253DF'
+
+		const urlNewsFeed = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-newsfeed?category=generalnews&region=DE';
+		const urlNewsFeedEn = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-newsfeed?category=generalnews&region=US';
 
         const options = {
             "method": "GET",
@@ -209,13 +252,26 @@
             }
         }
 
+		const ForexOptions = {
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com",
+                "x-rapidapi-key": "e9dbd04f89msh222ea9e305d5605p193ba2jsn983676bee539"
+			}
+			
+		}
+
+			
+		
         const newsFeedOptions = {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com",
                 "x-rapidapi-key": "e9dbd04f89msh222ea9e305d5605p193ba2jsn983676bee539"
             }
-        }
+		}
+		
+		
 
         // Fetch function
         async function fetchData(url, options) {
@@ -228,7 +284,7 @@
                 })
         }
 
-
+			//INDIZES TOP 6
         const responseDE = fetchData(urlDE, options)
             .then(response => {
                 let data = {
@@ -269,9 +325,61 @@
                 let hangSengElement = document.getElementById('hangSeng');
 
                 hangSengElement.innerText = 'Hang Seng: ' + data.hangSeng;
-            });
+			});
+			
+			//FOREX TOP 6
 
-        const responseNewsFeed = fetchData(urlNewsFeed, newsFeedOptions)
+		const responseForexUsd = fetchData(urlForexUsd, ForexOptions)
+            .then(response => {
+                let data = {
+                    euroUsd: response.price.regularMarketPrice.fmt,
+                }
+
+                let euroUsdElement = document.getElementById('euroUsd');
+
+                euroUsdElement.innerText = 'Euro/USD: ' + data.euroUsd;
+			});
+
+		/*const responseForexGbp = fetchData(urlForexGbp, ForexOptions)
+            .then(response => {
+                let data = {
+                    euroGbp: response.price.regularMarketPrice.fmt,
+                }
+
+                let euroGbpElement = document.getElementById('euroGbp');
+
+                euroGbpElement.innerText = 'Euro/GBP: ' + data.euroGbp;
+			});*/
+			
+
+			//FUTURES TOP 6
+
+		const responseGold= fetchData(urlDE, options)
+            .then(response => {
+                let data = {
+                    gold: response.marketSummaryResponse.result[3].regularMarketPrice.fmt,
+                }
+
+                let goldElement = document.getElementById('gold');
+
+                goldElement.innerText = 'Gold: ' + data.gold;
+			});
+
+			// Krypto TOP 6
+
+			const responseBtc= fetchData(urlDE, options)
+            .then(response => {
+                let data = {
+                    btc: response.marketSummaryResponse.result[5].regularMarketPrice.fmt,
+                }
+
+                let btcElement = document.getElementById('btc');
+
+                btcElement.innerText = 'BTC/EUR: ' + data.btc;
+			});
+
+			//NEWSFEED TOP10 US		
+        const responseNewsFeed = fetchData(urlNewsFeedEn, newsFeedOptions)
             .then(newsFeedResponse => {
 
                 const news = newsFeedResponse.items.result.map(entrie => {
@@ -286,7 +394,25 @@
                 newsList.innerHTML = news.map(newsElement => {
                     return '<a target="_blank" class="news-element" href="' + newsElement.link + '">' + newsElement.title + '</a></br></br>'
                 }).join('')
-            });
+			});
+		//NEWSFEED TOP10 DE
+			const responseNewsFeedDe = fetchData(urlNewsFeed, newsFeedOptions)
+            .then(newsFeedResponse => {
+
+                const news = newsFeedResponse.items.result.map(entrie => {
+                    return {
+                        title: entrie.title,
+                        link: entrie.link
+                    }
+                })
+
+                let newsList = document.getElementById('news-en-list');
+
+                newsList.innerHTML = news.map(newsElement => {
+                    return '<a target="_blank" class="news-en-element" href="' + newsElement.link + '">' + newsElement.title + '</a></br></br>'
+                }).join('')
+			});
+		
 
     </script>
 

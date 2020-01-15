@@ -112,6 +112,8 @@
 	    var tArea = document.getElementById('text');
 	    tArea.value = Array.from(checked).map(c => c.closest('tr').querySelector('td:nth-child(2)\n').textContent+ ' ' + c.closest('tr').querySelector('td:nth-child(3)').textContent);
 	    
+
+
 	    //or using spread syntax
 	    //tArea.value = [...checked].map(c => c.closest('tr').querySelector('td:nth-child(2)').textContent);
 	  });
