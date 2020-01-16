@@ -84,7 +84,7 @@
                     </div>
                     <div class="col-sm">
                         <div class="alert alert-secondary">
-							<p id="">Loading...</p>
+							<p id="silver">Loading...</p>
 						</div>
                     </div>
                     <div class="col-sm">
@@ -345,7 +345,7 @@
                 euroUsdElement.innerText = 'Euro/USD: ' + data.euroUsd;
 			});
 
-		/*const responseForexGbp = fetchData(urlForexGbp, ForexOptions)
+	/*	const responseForexGbp = fetchData(urlForexGbp, ForexOptions)
             .then(response => {
                 let data = {
                     euroGbp: response.price.regularMarketPrice.fmt,
@@ -370,9 +370,21 @@
                 goldElement.innerText = 'Gold: ' + data.gold;
 			});
 
+		const responseSilverMar= fetchData(urlEN, options)
+            .then(response => {
+                let data = {
+                    silver: response.marketSummaryResponse.result[6].regularMarketPrice.fmt,
+                }
+
+                let silverElement = document.getElementById('silver');
+
+                silverElement.innerText = 'SilverMar: ' + data.silver;
+                
+			});
+
 			// Krypto TOP 6
 
-			const responseBtc= fetchData(urlDE, options)
+/*			const responseBtc= fetchData(urlDE, options)
             .then(response => {
                 let data = {
                     btc: response.marketSummaryResponse.result[5].regularMarketPrice.fmt,
@@ -382,7 +394,7 @@
 
                 btcElement.innerText = 'BTC/EUR: ' + data.btc;
 			});
-
+*/
 			//NEWSFEED TOP10 US		
         const responseNewsFeed = fetchData(urlNewsFeedEn, newsFeedOptions)
             .then(newsFeedResponse => {

@@ -193,8 +193,6 @@
         }
 
 		
-		
-
         // Fetch function
         async function fetchData(url, options) {
             return await fetch(url, options)
@@ -256,21 +254,17 @@
 
                 hangSengElement.innerText = 'Hang Seng: ' + data.hangSeng;
 			});
-			
-			
-		
-
     </script>
 
 	<script>
-	var cb = document.querySelectorAll('input[type=checkbox]');
+<!--	var cb = document.querySelectorAll('input[type=checkbox]');
 	cb.forEach(function(ck){
 	  ck.addEventListener('click', function(el){
 	    var checked = document.querySelectorAll(':checked');
 	    var tArea = document.getElementById('text');
 	    tArea.value = Array.from(checked).map(c => c.closest('tr').querySelector('td:nth-child(2)\n').textContent+ ' ' + c.closest('tr').querySelector('td:nth-child(3)').textContent);
 	    
-
+-->
 
 	    //or using spread syntax
 	    //tArea.value = [...checked].map(c => c.closest('tr').querySelector('td:nth-child(2)').textContent);
