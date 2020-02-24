@@ -87,24 +87,24 @@
                     </div>
                     <div class="col-sm">
                         <div class="alert alert-secondary">
-                            <p id="">Loading...</p>
+                            <p id="Cooper">Loading...</p>
                         </div>
                     </div>
                     <div class="col-sm">
                         <div class="alert alert-secondary">
-                            <p id="">Loading...</p>
-                        </div>
-                    </div>
-
-                    <div class="col-sm">
-                        <div class="alert alert-secondary">
-                            <p id="">Loading...</p>
+                            <p id="Oel">Loading...</p>
                         </div>
                     </div>
 
                     <div class="col-sm">
                         <div class="alert alert-secondary">
-                            <p id="">Loading...</p>
+                            <p id="Crude">Loading...</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="alert alert-secondary">
+                            <p id="GasFeb20">Loading...</p>
                         </div>
                     </div>
                 </div>
@@ -123,24 +123,24 @@
                     </div>
                     <div class="col-sm">
                         <div class="alert alert-secondary">
-                            <p id="">Loading...</p>
+                            <p id="euroJpy">Loading...</p>
                         </div>
                     </div>
                     <div class="col-sm">
                         <div class="alert alert-secondary">
-                            <p id="">Loading...</p>
-                        </div>
-                    </div>
-
-                    <div class="col-sm">
-                        <div class="alert alert-secondary">
-                            <p id="">Loading...</p>
+                            <p id="euroCad">Loading...</p>
                         </div>
                     </div>
 
                     <div class="col-sm">
                         <div class="alert alert-secondary">
-                            <p id="">Loading...</p>
+                            <p id="euroAud">Loading...</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="alert alert-secondary">
+                            <p id="ForexSek">Loading...</p>
                         </div>
                     </div>
                 </div>
@@ -154,29 +154,29 @@
                     </div>
                     <div class="col-sm">
                         <div class="alert alert-secondary">
-                            <p id="">Loading...</p>
+                            <p id="Bch">Loading...</p>
                         </div>
                     </div>
                     <div class="col-sm">
                         <div class="alert alert-secondary">
-                            <p id="">Loading...</p>
+                            <p id="Eth">Loading...</p>
                         </div>
                     </div>
                     <div class="col-sm">
                         <div class="alert alert-secondary">
-                            <p id="">Loading...</p>
-                        </div>
-                    </div>
-
-                    <div class="col-sm">
-                        <div class="alert alert-secondary">
-                            <p id="">Loading...</p>
+                            <p id="Xmr">Loading...</p>
                         </div>
                     </div>
 
                     <div class="col-sm">
                         <div class="alert alert-secondary">
-                            <p id="">Loading...</p>
+                            <p id="Dash">Loading...</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="alert alert-secondary">
+                            <p id="Ltc">Loading...</p>
                         </div>
                     </div>
                 </div>
@@ -241,8 +241,24 @@
 
         const urlForexUsd = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-statistics?region=DE&symbol=EURUSD%253DX'
         const urlForexGbp = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-statistics?region=DE&symbol=EURGBP%253DX'
+        const urlForexJpy = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-statistics?region=DE&symbol=EURJPY%253DX'
+        const urlForexCad = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-statistics?region=DE&symbol=EURCAD%253DX'
+        const urlForexAud = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-statistics?region=DE&symbol=EURAUD%253DX'
+        const urlForexSek = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-statistics?region=DE&symbol=EURSEK%253DX'
 
         //const urlGold = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-statistics?region=DE&symbol=GC%253DF'
+        const urlCooper = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-statistics?region=US&symbol=HG%253DF'
+        const urlOel = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-statistics?region=US&symbol=CL%253DF'
+        const urlCrude = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-statistics?region=US&symbol=BZ%253DF'
+        const urlGasFeb20 = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-statistics?region=US&symbol=NG%253DF'
+
+        const urlBch = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/get-detail?region=DE&lang=de&symbol=BCH-EUR'
+        const urlEth = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/get-detail?region=DE&lang=de&symbol=ETH-EUR'
+        const urlXmr = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/get-detail?region=DE&lang=de&symbol=XMR-EUR'
+        const urlDash = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/get-detail?region=DE&lang=de&symbol=DASH-EUR'
+        const urlLtc = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/get-detail?region=DE&lang=de&symbol=LTC-EUR'
+
+        
 
         const urlNewsFeed = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-newsfeed?category=generalnews&region=DE';
         const urlNewsFeedEn = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-newsfeed?category=generalnews&region=US';
@@ -293,7 +309,10 @@
                     let data = {
                         dax: response.marketSummaryResponse.result[0].regularMarketPrice.fmt,
                         texDax: response.marketSummaryResponse.result[9].regularMarketPrice.fmt,
+
                         gold: response.marketSummaryResponse.result[3].regularMarketPrice.fmt,
+                        cooperMar20: response.marketSummaryResponse.result[3].regularMarketPrice.fmt,
+
                         btc: response.marketSummaryResponse.result[5].regularMarketPrice.fmt,
                     }
 
@@ -330,7 +349,7 @@
                     nikkei225Element.innerText = 'NIKKEI 225: ' + data.nikkei225;
                     silverElement.innerText = 'SilverMar: ' + data.silver;
                 });
-        }, 2000)
+        }, 1500)
 
         setTimeout(() => {
             const responseHK = fetchData(urlHK, options)
@@ -343,7 +362,62 @@
 
                     hangSengElement.innerText = 'Hang Seng: ' + data.hangSeng;
                 });
-        }, 3000)
+        }, 2000)
+
+
+        //FUTURES die letzten vier stück
+
+        setTimeout(() => {
+            const responseCooper = fetchData(urlCooper, options)
+                .then(response => {
+                    let data = {
+                        Cooper: response.price.regularMarketPrice.fmt,
+                    }
+
+                    let CooperElement = document.getElementById('Cooper');
+
+                    CooperElement.innerText = 'Cooper Mar 20: ' + data.Cooper;
+                });
+        }, 2500)
+
+        setTimeout(() => {
+            const responseOel = fetchData(urlOel, options)
+                .then(response => {
+                    let data = {
+                        Oel: response.price.regularMarketPrice.fmt,
+                    }
+
+                    let OelElement = document.getElementById('Oel');
+
+                    OelElement.innerText = 'ÖL (brent): ' + data.Oel;
+                });
+        }, 2600)
+
+        setTimeout(() => {
+            const responseCrude = fetchData(urlCrude, options)
+                .then(response => {
+                    let data = {
+                        Crude: response.price.regularMarketPrice.fmt,
+                    }
+
+                    let CrudeElement = document.getElementById('Crude');
+
+                    CrudeElement.innerText = 'Crude Oil: ' + data.Crude;
+                });
+        }, 2700)
+
+        setTimeout(() => {
+            const responseGasFeb20 = fetchData(urlGasFeb20, options)
+                .then(response => {
+                    let data = {
+                        GasFeb20: response.price.regularMarketPrice.fmt,
+                    }
+
+                    let GasFeb20Element = document.getElementById('GasFeb20');
+
+                    GasFeb20Element.innerText = 'Gas Feb 20: ' + data.GasFeb20;
+                });
+        }, 2700)
 
 
         //FOREX TOP 6
@@ -359,7 +433,7 @@
 
                     euroUsdElement.innerText = 'Euro/USD: ' + data.euroUsd;
                 });
-        }, 4000)
+        }, 3000)
 
 
         setTimeout(() => {
@@ -373,7 +447,128 @@
 
                     euroGbpElement.innerText = 'Euro/GBP: ' + data.euroGbp;
                 });
+        }, 3500)
+
+        setTimeout(() => {
+            const responseForexUsd = fetchData(urlForexJpy, ForexOptions)
+                .then(response => {
+                    let data = {
+                        euroJpy: response.price.regularMarketPrice.fmt,
+                    }
+
+                    let euroJpyElement = document.getElementById('euroJpy');
+
+                    euroJpyElement.innerText = 'Euro/JPY: ' + data.euroJpy;
+                });
+        }, 4000)
+
+        setTimeout(() => {
+            const responseForexCad = fetchData(urlForexCad, ForexOptions)
+                .then(response => {
+                    let data = {
+                        euroCad: response.price.regularMarketPrice.fmt,
+                    }
+
+                    let euroCadElement = document.getElementById('euroCad');
+
+                    euroCadElement.innerText = 'Euro/CAD: ' + data.euroCad;
+                });
+        }, 4500)
+
+        setTimeout(() => {
+            const responseForexAud = fetchData(urlForexAud, ForexOptions)
+                .then(response => {
+                    let data = {
+                        euroAud: response.price.regularMarketPrice.fmt,
+                    }
+
+                    let euroAudElement = document.getElementById('euroAud');
+
+                    euroAudElement.innerText = 'Euro/AUD: ' + data.euroAud;
+                });
         }, 5000)
+
+        setTimeout(() => {
+            const responseForexSek = fetchData(urlForexSek, ForexOptions)
+                .then(response => {
+                    let data = {
+                        ForexSek: response.price.regularMarketPrice.fmt,
+                    }
+
+                    let ForexSekElement = document.getElementById('ForexSek');
+
+                    ForexSekElement.innerText = 'Euro/SEK: ' + data.ForexSek;
+                });
+        }, 5500)
+
+
+        //Krypto
+
+        setTimeout(() => {
+            const responseBch = fetchData(urlBch, options)
+                .then(response => {
+                    let data = {
+                        Bch: response.price.regularMarketPrice.fmt,
+                    }
+
+                    let BchElement = document.getElementById('Bch');
+
+                    BchElement.innerText = 'BTC Cash Cash/EUR: ' + data.Bch;
+                });
+        }, 5600)
+
+        setTimeout(() => {
+            const responseEth = fetchData(urlEth, options)
+                .then(response => {
+                    let data = {
+                        Eth: response.price.regularMarketPrice.fmt,
+                    }
+
+                    let EthElement = document.getElementById('Eth');
+
+                    EthElement.innerText = 'Ethereum/EUR: ' + data.Eth;
+                });
+        }, 5700)
+
+        setTimeout(() => {
+            const responseXmr = fetchData(urlXmr, options)
+                .then(response => {
+                    let data = {
+                        Xmr: response.price.regularMarketPrice.fmt,
+                    }
+
+                    let XmrElement = document.getElementById('Xmr');
+
+                    XmrElement.innerText = 'Monero/EUR: ' + data.Xmr;
+                });
+        }, 5800)
+
+        setTimeout(() => {
+            const responseDash = fetchData(urlDash, options)
+                .then(response => {
+                    let data = {
+                        Dash: response.price.regularMarketPrice.fmt,
+                    }
+
+                    let DashElement = document.getElementById('Dash');
+
+                    DashElement.innerText = 'Dash / EUR: ' + data.Dash;
+                });
+        }, 5900)
+
+        setTimeout(() => {
+            const responseLtc = fetchData(urlLtc, options)
+                .then(response => {
+                    let data = {
+                        Ltc: response.price.regularMarketPrice.fmt,
+                    }
+
+                    let LtcElement = document.getElementById('Ltc');
+
+                    LtcElement.innerText = 'Litecoin / EUR: ' + data.Ltc;
+                });
+        }, 5950)
+
 
 
 
@@ -415,7 +610,7 @@
                         return '<a target="_blank" class="news-en-element" href="' + newsElement.link + '">' + newsElement.title + '</a></br></br>'
                     }).join('')
                 });
-        }, 7000)
+        }, 6500)
 
     </script>
 
