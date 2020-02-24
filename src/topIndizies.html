@@ -62,98 +62,97 @@
 
 				<tr>
 					<th scope="row">2</th>
-					<td>MDAXI</td>
-					<td>MDAX</td>
-					<td>13.2</td>
-					<td>26.777</td>
-					<td>1.3%</td>
+					<td><p id="MdaxSymbol">Loading...</p></td>
+					<th scope="col">MDAX</th>
+					<td><p id="MdaxKurs">Loading...</p></td>
+					<td><p id="MdaxChange">Loading...</p></td>
+					<td><p id="MdaxChangePercent">Loading...</p></td>
 					<td><input type="checkbox"></td>
 
 				</tr>
 
 				<tr>
 					<th scope="row">3</th>
-					<td>DAX</td>
-					<td>DAXX</td>
-					<td>13.2</td>
-					<td>25.757</td>
-					<td>1.3%</td>
+					<td><p id="TdaxSymbol">Loading...</p></td>
+					<th scope="col">TECDAX</th>
+					<td><p id="TdaxKurs">Loading...</p></td>
+					<td><p id="TdaxChange">Loading...</p></td>
+					<td><p id="TdaxChangePercent">Loading...</p></td>
 					<td><input type="checkbox"></td>
-
 				</tr>
 
 				<tr>
 
 					<th scope="row">4</th>
-					<td>MAX</td>
-					<td>MAXXX</td>
-					<td>13.2</td>
-					<td>26.788</td>
-					<td>1.3%</td>
+					<td><p id="SdaxSymbol">Loading...</p></td>
+					<th scope="col">SDAX</th>
+					<td><p id="SdaxKurs">Loading...</p></td>
+					<td><p id="SdaxChange">Loading...</p></td>
+					<td><p id="SdaxChangePercent">Loading...</p></td>
 					<td><input type="checkbox"></td>
 				</tr>
 				<tr>
 					<th scope="row">5</th>
-					<td>DAX</td>
-					<td>DAXX</td>
-					<td>13.2</td>
-					<td>25.757</td>
-					<td>1.3%</td>
+					<td><p id="StoxxSymbol">Loading...</p></td>
+					<th scope="col">Euro Stoxx 50</th>
+					<td><p id="StoxxKurs">Loading...</p></td>
+					<td><p id="StoxxChange">Loading...</p></td>
+					<td><p id="StoxxChangePercent">Loading...</p></td>
 					<td><input type="checkbox"></td>
 
 				</tr>
 
 				<tr>
 					<th scope="row">6</th>
-					<td>DAX</td>
-					<td>DAXX</td>
-					<td>13.2</td>
-					<td>25.757</td>
-					<td>1.3%</td>
+					<td><p id="sp500Symbol">Loading...</p></td>
+					<th scope="col">S&P 500</th>
+					<td><p id="sp500Kurs">Loading...</p></td>
+					<td><p id="sp500Change">Loading...</p></td>
+					<td><p id="sp500ChangePercent">Loading...</p></td>
 					<td><input type="checkbox"></td>
 
 				</tr>
 
 				<tr>
 					<th scope="row">7</th>
-					<td>DAX</td>
-					<td>DAXX</td>
-					<td>13.2</td>
-					<td>25.757</td>
-					<td>1.3%</td>
+					<td><p id="DjiSymbol">Loading...</p></td>
+					<th scope="col">Dow Jones 30</th>
+					<td><p id="DjiKurs">Loading...</p></td>
+					<td><p id="DjiChange">Loading...</p></td>
+					<td><p id="DjiChangePercent">Loading...</p></td>
 					<td><input type="checkbox"></td>
 
 				</tr>
 
 				<tr>
 					<th scope="row">8</th>
-					<td>DAX</td>
-					<td>DAXX</td>
-					<td>13.2</td>
-					<td>25.757</td>
-					<td>1.3%</td>
+					<td><p id="NasdaqSymbol">Loading...</p></td>
+					<th scope="col">Nasdaq Compositive</th>
+					<td><p id="NasdaqKurs">Loading...</p></td>
+					<td><p id="NasdaqChange">Loading...</p></td>
+					<td><p id="NasdaqChangePercent">Loading...</p></td>
 					<td><input type="checkbox"></td>
 
 				</tr>
 
 				<tr>
 					<th scope="row">9</th>
-					<td>DAX</td>
-					<td>DAXX</td>
-					<td>13.2</td>
-					<td>25.757</td>
-					<td>1.3%</td>
+					<td><p id="NikkeiSymbol">Loading...</p></td>
+					<th scope="col">Nikkei 225</th>
+					<td><p id="NikkeiKurs">Loading...</p></td>
+					<td><p id="NikkeiChange">Loading...</p></td>
+					<td><p id="NikkeiChangePercent">Loading...</p></td>
 					<td><input type="checkbox"></td>
 
 				</tr>
 
 				<tr>
 					<th scope="row">10</th>
-					<td>DAX</td>
-					<td>DAXX</td>
-					<td>13.2</td>
-					<td>25.757</td>
-					<td>1.3%</td>
+					<td><p id="FtseSymbol">Loading...</p></td>
+					<th scope="col">FTSE 100</th>
+					<td><p id="FtseKurs">Loading...</p></td>
+					<td><p id="FtseChange">Loading...</p></td>
+					<td><p id="FtseChangePercent">Loading...</p></td>
 					<td><input type="checkbox"></td>
 
 				</tr>
@@ -212,6 +211,46 @@
 					daxKurs: response.marketSummaryResponse.result[0].regularMarketPrice.fmt,
 					daxChange: response.marketSummaryResponse.result[0].regularMarketChange.fmt,
 					daxChangePercent: response.marketSummaryResponse.result[0].regularMarketChangePercent.fmt,
+
+					MdaxSymbol: response.marketSummaryResponse.result[8].symbol,
+					MdaxKurs: response.marketSummaryResponse.result[8].regularMarketPrice.fmt,
+					MdaxChange: response.marketSummaryResponse.result[8].regularMarketChange.fmt,
+					MdaxChangePercent: response.marketSummaryResponse.result[8].regularMarketChangePercent.fmt,
+
+					TdaxSymbol: response.marketSummaryResponse.result[9].symbol,
+					TdaxKurs: response.marketSummaryResponse.result[9].regularMarketPrice.fmt,
+					TdaxChange: response.marketSummaryResponse.result[9].regularMarketChange.fmt,
+					TdaxChangePercent: response.marketSummaryResponse.result[9].regularMarketChangePercent.fmt,
+
+					SdaxSymbol: response.marketSummaryResponse.result[10].symbol,
+					SdaxKurs: response.marketSummaryResponse.result[10].regularMarketPrice.fmt,
+					SdaxChange: response.marketSummaryResponse.result[10].regularMarketChange.fmt,
+					SdaxChangePercent: response.marketSummaryResponse.result[10].regularMarketChangePercent.fmt,
+
+					StoxxSymbol: response.marketSummaryResponse.result[1].symbol,
+					StoxxKurs: response.marketSummaryResponse.result[1].regularMarketPrice.fmt,
+					StoxxChange: response.marketSummaryResponse.result[1].regularMarketChange.fmt,
+					StoxxChangePercent: response.marketSummaryResponse.result[1].regularMarketChangePercent.fmt,
+
+					DjiSymbol: response.marketSummaryResponse.result[2].symbol,
+					DjiKurs: response.marketSummaryResponse.result[2].regularMarketPrice.fmt,
+					DjiChange: response.marketSummaryResponse.result[2].regularMarketChange.fmt,
+					DjiChangePercent: response.marketSummaryResponse.result[2].regularMarketChangePercent.fmt,
+
+					NasdaqSymbol: response.marketSummaryResponse.result[14].symbol,
+					NasdaqKurs: response.marketSummaryResponse.result[14].regularMarketPrice.fmt,
+					NasdaqChange: response.marketSummaryResponse.result[14].regularMarketChange.fmt,
+					NasdaqChangePercent: response.marketSummaryResponse.result[14].regularMarketChangePercent.fmt,
+
+					NikkeiSymbol: response.marketSummaryResponse.result[11].symbol,
+					NikkeiKurs: response.marketSummaryResponse.result[11].regularMarketPrice.fmt,
+					NikkeiChange: response.marketSummaryResponse.result[11].regularMarketChange.fmt,
+					NikkeiChangePercent: response.marketSummaryResponse.result[11].regularMarketChangePercent.fmt,
+
+					FtseSymbol: response.marketSummaryResponse.result[12].symbol,
+					FtseKurs: response.marketSummaryResponse.result[12].regularMarketPrice.fmt,
+					FtseChange: response.marketSummaryResponse.result[12].regularMarketChange.fmt,
+					FtseChangePercent: response.marketSummaryResponse.result[12].regularMarketChangePercent.fmt,
                     
                 }
 
@@ -219,41 +258,120 @@
                 let daxKursElement = document.getElementById('daxKurs');
 				let daxChangeElement = document.getElementById('daxChange');
 				let daxChangePercentElement = document.getElementById('daxChangePercent');
+
+				let MdaxSymbolElement = document.getElementById('MdaxSymbol');
+                let MdaxKursElement = document.getElementById('MdaxKurs');
+				let MdaxChangeElement = document.getElementById('MdaxChange');
+				let MdaxChangePercentElement = document.getElementById('MdaxChangePercent');
+
+				let TdaxSymbolElement = document.getElementById('TdaxSymbol');
+                let TdaxKursElement = document.getElementById('TdaxKurs');
+				let TdaxChangeElement = document.getElementById('TdaxChange');
+				let TdaxChangePercentElement = document.getElementById('TdaxChangePercent');
+
+				let SdaxSymbolElement = document.getElementById('SdaxSymbol');
+                let SdaxKursElement = document.getElementById('SdaxKurs');
+				let SdaxChangeElement = document.getElementById('SdaxChange');
+				let SdaxChangePercentElement = document.getElementById('SdaxChangePercent');
+
+				let StoxxSymbolElement = document.getElementById('StoxxSymbol');
+                let StoxxKursElement = document.getElementById('StoxxKurs');
+				let StoxxChangeElement = document.getElementById('StoxxChange');
+				let StoxxChangePercentElement = document.getElementById('StoxxChangePercent');
+
+				let DjiSymbolElement = document.getElementById('DjiSymbol');
+                let DjiKursElement = document.getElementById('DjiKurs');
+				let DjiChangeElement = document.getElementById('DjiChange');
+				let DjiChangePercentElement = document.getElementById('DjiChangePercent');
+
+				let NasdaqSymbolElement = document.getElementById('NasdaqSymbol');
+                let NasdaqKursElement = document.getElementById('NasdaqKurs');
+				let NasdaqChangeElement = document.getElementById('NasdaqChange');
+				let NasdaqChangePercentElement = document.getElementById('NasdaqChangePercent');
+
+				let NikkeiSymbolElement = document.getElementById('NikkeiSymbol');
+                let NikkeiKursElement = document.getElementById('NikkeiKurs');
+				let NikkeiChangeElement = document.getElementById('NikkeiChange');
+				let NikkeiChangePercentElement = document.getElementById('NikkeiChangePercent');
+
+				let FtseSymbolElement = document.getElementById('FtseSymbol');
+                let FtseKursElement = document.getElementById('FtseKurs');
+				let FtseChangeElement = document.getElementById('FtseChange');
+				let FtseChangePercentElement = document.getElementById('FtseChangePercent');
 				
 
                 daxSymbolElement.innerText = data.daxSymbol;
 				daxKursElement.innerText = data.daxKurs;
 				daxChangeElement.innerText = data.daxChange;
 				daxChangePercentElement.innerText = data.daxChangePercent;
+
+				MdaxSymbolElement.innerText = data.MdaxSymbol;
+				MdaxKursElement.innerText = data.MdaxKurs;
+				MdaxChangeElement.innerText = data.MdaxChange;
+				MdaxChangePercentElement.innerText = data.MdaxChangePercent;
+
+				TdaxSymbolElement.innerText = data.TdaxSymbol;
+				TdaxKursElement.innerText = data.TdaxKurs;
+				TdaxChangeElement.innerText = data.TdaxChange;
+				TdaxChangePercentElement.innerText = data.TdaxChangePercent;
+
+				SdaxSymbolElement.innerText = data.SdaxSymbol;
+				SdaxKursElement.innerText = data.SdaxKurs;
+				SdaxChangeElement.innerText = data.SdaxChange;
+				SdaxChangePercentElement.innerText = data.SdaxChangePercent;
+
+				StoxxSymbolElement.innerText = data.StoxxSymbol;
+				StoxxKursElement.innerText = data.StoxxKurs;
+				StoxxChangeElement.innerText = data.StoxxChange;
+				StoxxChangePercentElement.innerText = data.StoxxChangePercent;
+
+				DjiSymbolElement.innerText = data.DjiSymbol;
+				DjiKursElement.innerText = data.DjiKurs;
+				DjiChangeElement.innerText = data.DjiChange;
+				DjiChangePercentElement.innerText = data.DjiChangePercent;
+
+				NasdaqSymbolElement.innerText = data.NasdaqSymbol;
+				NasdaqKursElement.innerText = data.NasdaqKurs;
+				NasdaqChangeElement.innerText = data.NasdaqChange;
+				NasdaqChangePercentElement.innerText = data.NasdaqChangePercent;
+
+				NikkeiSymbolElement.innerText = data.NikkeiSymbol;
+				NikkeiKursElement.innerText = data.NikkeiKurs;
+				NikkeiChangeElement.innerText = data.NikkeiChange;
+				NikkeiChangePercentElement.innerText = data.NikkeiChangePercent;
+
+				FtseSymbolElement.innerText = data.FtseSymbol;
+				FtseKursElement.innerText = data.FtseKurs;
+				FtseChangeElement.innerText = data.FtseChange;
+				FtseChangePercentElement.innerText = data.FtseChangePercent;
             });
 
         const responseEN = fetchData(urlEN, options)
             .then(response => {
                 let data = {
-                    dowJones: response.marketSummaryResponse.result[1].regularMarketPrice.fmt,
-                    sp500: response.marketSummaryResponse.result[0].regularMarketPrice.fmt,
-                    nikkei225: response.marketSummaryResponse.result[15].regularMarketPrice.fmt,
+                    
+					sp500Symbol: response.marketSummaryResponse.result[0].symbol,
+					sp500Kurs: response.marketSummaryResponse.result[0].regularMarketPrice.fmt,
+					sp500Change: response.marketSummaryResponse.result[0].regularMarketChange.fmt,
+					sp500ChangePercent: response.marketSummaryResponse.result[0].regularMarketChangePercent.fmt,
+					
+				
+                    
                 }
-
-                let dowJonesElement = document.getElementById('dowJones');
-                let sp500Element = document.getElementById('sp500');
-                let nikkei225Element = document.getElementById('nikkei225')
-
-                dowJonesElement.innerText = 'DowJones: ' + data.dowJones;
-                sp500Element.innerText = 'S%P 500: ' + data.sp500;
-                nikkei225Element.innerText = 'NIKKEI 225: ' + data.nikkei225;
+               
+                let sp500SymbolElement = document.getElementById('sp500Symbol');
+                let sp500KursElement = document.getElementById('sp500Kurs');
+				let sp500ChangeElement = document.getElementById('sp500Change');
+				let sp500ChangePercentElement = document.getElementById('sp500ChangePercent');
+                
+                sp500SymbolElement.innerText = data.sp500Symbol;
+				sp500KursElement.innerText = data.sp500Kurs;
+				sp500ChangeElement.innerText = data.sp500Change;
+				sp500ChangePercentElement.innerText = data.sp500ChangePercent;
+                
             });
 
-        const responseHK = fetchData(urlHK, options)
-            .then(response => {
-                let data = {
-                    hangSeng: response.marketSummaryResponse.result[0].regularMarketPrice.fmt,
-                }
-
-                let hangSengElement = document.getElementById('hangSeng');
-
-                hangSengElement.innerText = 'Hang Seng: ' + data.hangSeng;
-			});
+        
     </script>
 
 	<script>
